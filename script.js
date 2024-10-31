@@ -18,7 +18,7 @@ function SendQuestion() {
       Authorization: "Bearer " + OPENAI_API_KEY,
     },
     body: JSON.stringify({
-      model: "text-davinci-003",
+      model: "text-davinci-003", // text-davinci-003 está desatualizado, ver mais >> https://platform.openai.com/settings/organization/limits
       prompt: sQuestion,
       max_tokens: 2048, // tamanho da resposta
       temperature: 0.5, // criatividade na resposta
